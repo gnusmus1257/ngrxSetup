@@ -1,0 +1,21 @@
+<p>
+  get full movies
+</p>
+<div *ngFor="let movie of movies$ | async">
+  {{movie.name}} {{movie.description}}
+</div>
+
+<p>
+  get movies names
+</p>
+<div *ngFor="let name of movieNames$ | async">
+  {{name}}
+</div>
+
+
+<p>
+  get movies desctiprions
+</p>
+<div *ngFor="let description of movieDescriptions$ | async">
+  {{description}}
+</div>
